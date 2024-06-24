@@ -15,10 +15,12 @@
 
 body {
     display: flex;
+    flex-direction : column;
     justify-content: center;
+    margin : 0;
 }
 
-.main-container {
+.main-container, header {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -57,6 +59,30 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+/****** Header ********/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    height:80px;
+    margin-top: 5px;
+}
+header img {
+    max-height: 25px;
+    width : auto;
+}
+
+header nav a {
+    margin : 10px 30px;
+    padding-top: 13px;
+}
+
+header nav a:hover {
+    color : var(--main-color);
+    border-top: 3px solid #0065FC;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
