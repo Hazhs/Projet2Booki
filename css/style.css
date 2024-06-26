@@ -53,6 +53,10 @@ a {
     font-size: 16px;
 }
 
+.card-subtitle {
+    font-size: 0.8rem;
+}
+
 .euro {
     font-weight: 700;
 }
@@ -61,7 +65,8 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header ********/
+
+/********** Header ************/
 header {
     display: flex;
     justify-content: space-between;
@@ -93,15 +98,12 @@ header nav a:hover {
 
 .searchTools h1 {
     margin: 0;
+    font-size :1.8em
 }
 
 .searchTools p {
     margin : 5px 0 30px 0;
     font-size : 16px;
-}
-
-.searchTools h1 {
-    font-size :1.8em
 }
 
 form {
@@ -144,7 +146,7 @@ button {
     padding : 0px 15px 0px 15px;
     background-color: #0065FC;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
-    border-radius: 0.7vmax;
+    border-radius: 15px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
 }
@@ -194,7 +196,6 @@ button {
     margin-left: 10px;
 }
 
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -213,6 +214,61 @@ button {
     width: 65%;
 }
 
+.hebergements-section {
+    display: flex;
+    flex-flow : row wrap;
+    justify-content : space-between;
+    margin-bottom: 0;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29%;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    margin-top: 30px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+}
+
+.hebergements-cards img {
+    height: 110px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.hebergements-cards h3, .hebergements-cards p, .hebergements-cards .card-rating {
+    margin: 0;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 5px;
+    padding-bottom: 8px;
+}
+
+.hebergements-cards .card-rating {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.plus-Link {
+    margin-top : 35px;
+    margin-bottom: 0;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
