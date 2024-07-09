@@ -234,7 +234,6 @@ button {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 30%;
     height: auto;
     border-radius: 20px;
@@ -244,7 +243,20 @@ button {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
+.hebergements-cards .card a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.hebergements-cards .card .card-title, .hebergements-cards .card p, .hebergements-cards .card .card-rating {
+    padding-left: 10px;
+}
+
+.hebergements-cards .card .card-title {
+    padding-top: 10px;
+}
 .hebergements .card img {
     height: 110px;
     width: 100%;
@@ -257,24 +269,20 @@ button {
     margin: 0;
 }
 
-.hebergements .card .card-title {
-    margin-top: 5px;
-    padding-bottom: 8px;
-}
-
-.hebergements .card .card-rating {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.hebergements .card p {
+    margin: 5px 0px 5px 0;
 }
 
 .hebergements .card .card-content {
-    padding-left: 15px;
+    padding: 5px 0px 5px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
+.hebergements-cards .card .card-rating {
+    margin-bottom: 5px;
+}
 .plus-Link {
     margin-top: 30px;
     margin-bottom: 0;
@@ -463,19 +471,22 @@ footer ul li {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 25px;
         padding-left: 0;
         padding-right: 0;
     }
 
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        width: 100%;
     }
 
     header nav a{
+        width: 100%;
         margin-left: 0;
-        padding : 20px 50px 13px 50px;
+        padding : 20px 0px 13px 0px;
+        display: flex;
+        justify-content: center;
     }
 
     header nav a:hover {
@@ -487,8 +498,9 @@ footer ul li {
     /***searchTools***/
 
     .searchTools {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
     }
 
     .searchTools h1 {
@@ -506,7 +518,7 @@ footer ul li {
     }
 
     .searchTools form input {
-        width: 65%;
+        width: 100%;
         font-size : 1.3em;
     }
 
@@ -544,7 +556,12 @@ footer ul li {
         font-size: 1.1em;
         margin-left: 0;
         margin-bottom: 15px;
-        width: 115px;
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .search-info p {
@@ -571,7 +588,7 @@ footer ul li {
     }
 
     .populaires-cards .card {
-        width: 95%;
+        width: 98%;
         height: 125px;
         margin-bottom: 0;
         margin-top: 15px;
@@ -594,7 +611,7 @@ footer ul li {
         flex-direction: column;
     }
     .hebergements-cards .card {
-        width: 95%;
+        width: 98%;
         margin-top: 15px;
     }
 
@@ -628,6 +645,6 @@ footer ul li {
     }
 
     footer ul {
-        width: 100%;
+        width: 80%;
     }
 }
